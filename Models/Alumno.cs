@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
 namespace _201012_API1.Models;
 
 public partial class Alumno
 {
+    [Key]
     public int IdAlumno { get; set; }
 
     public string NombreAlumno { get; set; } = null!;
